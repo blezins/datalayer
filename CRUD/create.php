@@ -5,13 +5,13 @@
     use Source\Models\Address;
 
     $user = new User();
-    $user->first_name = 'Edivalda';
-    $user->last_name = 'Cruz';
+    $user->first_name = 'Elma Maria';
+    $user->last_name = 'Pinto';
     $user->genre = 'F';
     $user->save();
 
     $addr = new Address();
-    $addr->add($user, "Rua Edivalda Cruz", "55");
+    $addr->add($user, "Rua Elma Maria Pinto", "9");
     $addr->save();
 
     var_dump($user);
